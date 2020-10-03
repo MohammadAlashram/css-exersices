@@ -8,6 +8,7 @@
             margin: 0px;
         }
 
+
         header {
             background-color: #ebde52;
             height: 80px;
@@ -16,27 +17,44 @@
         nav {
             width: 20%;
             padding-top: 20px;
+            background-color:  #e3e3e3;
+            position: absolute;
+            right: 0px;
+            height: 300px;
+            
+            
         }
 
         main {
-            position: absolute;
+        
             top: 80px; /* same as the height of header */
             left: 20%; /* same as the width of nav */
             width: 80%;
             padding-top: 20px;
+            left: auto;
+            background-color: white;
+        }
+
+        body{
+            background-color:  #ffffcc;
         }
 
         p {
-            margin: 1em;
+            /* margin: 1em; */
+        }
+        #space{
+            width: 80%;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-
+<div id="space">
+   
 <header>
     <h1>2-column layout</h1>
 </header>
-
+<div style="position: relative;">
 <nav>
     <ul>
         <li>Item #1</li>
@@ -75,6 +93,9 @@
         egestas bibendum et lobortis justo. In in nulla mattis magna mollis pulvinar quis eget lacus. Suspendisse eu justo
         ipsum. Fusce ornare ligula eu orci porttitor, imperdiet mattis nisl tincidunt.</p>
 </main>
+</div></div>
 
+<footer style="height: 30px; position: fixed; background-color: dimgray; color: white; width: 100%; text-align: center;">
+<p> Accept our cookie policy</p></footer>
 </body>
 </html>
